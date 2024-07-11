@@ -1,4 +1,4 @@
-Cài đặt Hadoop
+###Cài đặt Hadoop
 Bước 1: Cài đặt SSH
 sudo apt install ssh
 Bước 2: Cài đặt PDSH
