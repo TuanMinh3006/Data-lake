@@ -73,8 +73,28 @@ Tạo data lake có thể lưu trữ các file với các định dạng khác
 
 -Công nghệ sử dụng: Hadoop
 
+-Yêu cầu : Ubuntu 18.04 được cài đặt trên máy ảo.
+
 -Thành phần: Gồm 1 máy name node và 2 máy data node
 
+-Name Node: 
+
++ Quản lý metadata bao gồm vị trí, tên file của datanode
+
++ Điều phối: Khi client yêu cầu đọc hoặc ghi dữ liệu, NameNode sẽ cung cấp thông tin về vị trí các block cần thích
+  
++ Quản lý Duplicates: Name Node theo dõi và duy trì bản sao (replication) của mỗi block.
+
+-DataNode:
+
++ Lưu trữ Dữ liệu: DataNode chịu trách nhiệm lưu trữ các block dữ liệu thực tế. Mỗi block của một file sẽ được lưu trữ trên nhiều DataNode khác nhau để đảm bảo tính sẵn sàng và độ tin cậy.
+  
++ Thực hiện yêu cầu từ Client: Khi client yêu cầu đọc hoặc ghi dữ liệu, DataNode sẽ thực hiện các yêu cầu này bằng cách đọc hoặc ghi các block dữ liệu.
+  
++ Báo cáo về NameNode: DataNode định kỳ gửi báo cáo về trạng thái của chúng cho NameNode, bao gồm thông tin về các block đang được lưu trữ, tình trạng ổ đĩa, và các lỗi gặp phải.
+  
++ Thực hiện Điều phối của NameNode: Khi NameNode yêu cầu, DataNode sẽ di chuyển hoặc sao chép các block dữ liệu để đảm bảo số lượng bản sao hợp lý hoặc để phục hồi dữ liệu sau khi một DataNode khác bị lỗi.
+  
 ### 2.2: Xây dựng các luồng data để đẩy/lấy dữ liệu lên data lake
 -Mục đích: Xây dựng các luồng dữ liệu đẩy tự động từ máy local lên data lake để lưu trữ. Và xây dựng các luồng dữ liệu tự động lấy dữ liệu từ máy data lake về máy local nhằm mục đích phân tích dữ liệu.
 
