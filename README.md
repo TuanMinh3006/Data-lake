@@ -27,7 +27,7 @@ Tạo data lake có thể lưu trữ các file với các định dạng khác
  
 -Thư viện sử dụng: Request(Python), BeautifulSoup(Python)
 
-### 1.1. Xây dựng module thu thập điểm thi của sinh viên trường HVKTMM
+### 1.1: Xây dựng module thu thập điểm thi của sinh viên trường HVKTMM
 -Mục tiêu: thu thập điểm thi kết thúc học phần của sinh viên trong trường trong 2 năm học 2022 – 2023 và 2023 – 2024 (từ đợt 1 học kì 1 cho đến đợt 1 học kì 2) để lưu trữ và phục vụ cho việc phân tích dữ liệu sau này.
 
 -Đầu vào: [Trang web khảo thí của trường](https://ktdbcl.actvn.edu.vn/khao-thi/to-chuc-thi/ket-qua-thi.html?fbclid=IwZXh0bgNhZW0CMTEAAR2xloZngUWT3Xl5d4u0YOxp5DoIwBuGqt9KfAPz9SzoNz4n_Wm1ZrNff5M_aem_hVtwlsu5g3iDwhepiyi9Lg) 
@@ -40,7 +40,7 @@ Tạo data lake có thể lưu trữ các file với các định dạng khác
 ![image](https://github.com/user-attachments/assets/38367b08-db5a-45e0-87bc-791542ee010f)
 ![image](https://github.com/user-attachments/assets/4c76cd33-8e46-434c-b57a-01b29ad621e8)
   
-### 1.2. Lập trình module thu thập điểm tuyển sinh của trường HVKTMM
+### 1.2: Lập trình module thu thập điểm tuyển sinh của trường HVKTMM
 -Mục tiêu: thu thập điểm thi vào trường của các sinh viên trong 3 năm 2021, 2022, 2023 để lưu trữ và phục vụ cho việc phân tích dữ liệu sau này.
 
 -Đầu vào: 
@@ -72,6 +72,9 @@ Tạo data lake có thể lưu trữ các file với các định dạng khác
 -Mục đích: Xây dựng data lake chứa các dữ liệu đã được thu thập về, nhằm mục đích cho các analyzic sau này.
 
 -Công nghệ sử dụng: Hadoop
+
+-Thành phần: Gồm 1 máy name node và 2 máy data node
+
 ### 2.2: Xây dựng các luồng data để đẩy/lấy dữ liệu lên data lake
 -Mục đích: Xây dựng các luồng dữ liệu đẩy tự động từ máy local lên data lake để lưu trữ. Và xây dựng các luồng dữ liệu tự động lấy dữ liệu từ máy data lake về máy local nhằm mục đích phân tích dữ liệu.
 
