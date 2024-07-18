@@ -9,7 +9,7 @@
 ## Mục đích: 
 Tạo data lake có thể lưu trữ các file với các định dạng khác nhau, với các công cụ tự động thu thập và đẩy dữ liệu từ máy cá nhân lên nơi tập chung tổng của học viện , từ đây các thông tin có thể được trích xuất, chuyển đổi, sàng lọc đưa vào các hệ thống phân tích tiên tiến nhằm nắm bắt được tình hình học tập và giảng dạy ở học viện và tìm ra hướng phát triển tốt hơn cho học viện.
 
-## Tech requirement
+## Yêu cầu:
 - [Python] - Yêu cầu từ phiên bản python 3.x
 + [Pip] - Yêu cầu trình quản lý gói pip
 * [wget] - Dùng để tải các tệp nén chứa hadoop và nifi 
